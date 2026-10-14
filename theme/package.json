@@ -1,0 +1,29 @@
+{
+  "name": "slidev-theme-turing-express",
+  "private": true,
+  "type": "module",
+  "description": "Turing-Express visual identity for Slidev decks",
+  "keywords": ["slidev-theme", "slidev"],
+  "engines": {
+    "slidev": ">=52.0.0"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "slidev": {
+    "colorSchema": "light",
+    "defaults": {
+      "fonts": {
+        "provider": "none",
+        "sans": "Brut Grotesque",
+        "serif": "Droulers Clarendon",
+        "mono": "SF Mono,Menlo",
+        "weights": "400",
+        "italic": false
+      },
+      "themeConfig": {
+        "primary": "#263a2e"
+      }
+    }
+  }
+}

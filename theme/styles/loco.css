@@ -1,0 +1,88 @@
+.te-loco {
+  --te-bit-width: 1.3em;
+  --te-bit-height: 1.45em;
+  display: flex;
+  align-items: center;
+  font-family: var(--te-ribbon-font);
+  font-size: 1.2rem;
+  width: 100%;
+}
+
+.te-loco__ribbon {
+  flex: 0 1 auto;
+  min-width: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  height: var(--te-bit-height);
+  overflow: hidden;
+  padding-right: 6px;
+  z-index: 1;
+  position: relative;
+}
+
+.te-loco__slot {
+  flex: 0 0 auto;
+  display: block;
+  width: var(--te-bit-width);
+  height: var(--te-bit-height);
+}
+
+.te-loco__bit {
+  box-sizing: border-box;
+  display: block;
+  width: var(--te-bit-width);
+  height: var(--te-bit-height);
+  line-height: calc(var(--te-bit-height) - 4px);
+  text-align: center;
+  border: 2px solid var(--te-accent);
+  transform: skewX(-15deg) scaleY(0.7);
+}
+
+.te-loco__slot--zero .te-loco__bit {
+  color: var(--te-paper);
+  background: var(--te-accent);
+}
+
+.te-loco__slot--one .te-loco__bit {
+  color: var(--te-accent);
+  background: var(--te-paper);
+}
+
+.te-loco__slot--zero + .te-loco__slot--zero .te-loco__bit,
+.te-loco__slot--one + .te-loco__slot--one .te-loco__bit {
+  border-left: none;
+}
+
+.te-loco__motive {
+  flex: 0 0 auto;
+  height: 2.5em;
+  position: relative;
+  top: -0.1em;
+}
+
+.te-loco--animate .te-loco__slot {
+  animation: te-bit-in 0.2s linear both;
+  animation-delay: calc(var(--te-bit-index) * 16ms);
+}
+
+@keyframes te-bit-in {
+  from {
+    width: 0;
+    opacity: 0;
+  }
+  1% {
+    width: var(--te-bit-width);
+    opacity: 0;
+  }
+  to {
+    width: var(--te-bit-width);
+    opacity: 1;
+  }
+}
+
+@media print, (prefers-reduced-motion: reduce) {
+  .te-loco--animate .te-loco__slot {
+    animation: none;
+  }
+}

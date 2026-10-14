@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "Droulers Clarendon";
+  src: url("../fonts/DroulersClarendon-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "Droulers";
+  src: url("../fonts/Droulers-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "Brut Grotesque";
+  src: url("../fonts/Brut_Grotesque-Book.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: block;
+}

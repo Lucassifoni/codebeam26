@@ -1,0 +1,18 @@
+:root {
+  --te-paper: #ffffff;
+  --te-ink: #263a2e;
+  --te-muted: #565656;
+  --te-accent: #263a2e;
+  --te-accent-pale: #eef2ef;
+  --te-title-font: "Droulers Clarendon", Georgia, "Times New Roman", serif;
+  --te-body-font: "Brut Grotesque", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --te-ribbon-font: "Droulers", monospace;
+
+  --slidev-theme-primary: var(--te-accent);
+  --slidev-code-background: var(--te-accent-pale);
+  --slidev-code-foreground: var(--te-ink);
+  --slidev-code-radius: 0;
+  --slidev-code-font-size: 14px;
+  --slidev-code-line-height: 21px;
+  --slidev-code-padding: 12px 16px;
+}

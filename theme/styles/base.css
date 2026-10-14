@@ -1,0 +1,134 @@
+.slidev-layout {
+  background: var(--te-paper);
+  color: var(--te-ink);
+  font-family: var(--te-body-font);
+  font-weight: 400;
+  font-synthesis: none;
+  line-height: 1.3;
+}
+
+.slidev-layout h1,
+.slidev-layout h2,
+.slidev-layout h3,
+.slidev-layout h4 {
+  font-family: var(--te-title-font);
+  font-weight: 400;
+  color: var(--te-accent);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.slidev-layout h1 {
+  font-size: 2.3em;
+  line-height: 1.1;
+  margin-bottom: 0.6em;
+}
+
+.slidev-layout h1 + p {
+  color: var(--te-muted);
+  margin-top: -0.3em;
+}
+
+.slidev-layout h2 {
+  font-size: 1.6em;
+  line-height: 1.2;
+  margin-bottom: 0.4em;
+}
+
+.slidev-layout h3 {
+  font-size: 1.25em;
+  line-height: 1.25;
+  color: var(--te-ink);
+  margin-bottom: 0.25em;
+}
+
+.slidev-layout strong,
+.slidev-layout b {
+  font-weight: 400;
+  color: var(--te-accent);
+}
+
+.slidev-layout em {
+  font-style: normal;
+  color: var(--te-muted);
+}
+
+.slidev-layout a {
+  color: var(--te-accent);
+  border-bottom: none;
+  text-decoration: underline;
+  text-underline-offset: 0.16em;
+}
+
+.slidev-layout ul {
+  list-style: disc;
+}
+
+.slidev-layout ol {
+  list-style: decimal;
+}
+
+.slidev-layout li::marker {
+  color: var(--te-accent);
+}
+
+.slidev-layout blockquote {
+  background: var(--te-accent-pale);
+  border-left: 4px solid var(--te-accent);
+  color: var(--te-ink);
+  padding: 0.6em 1em;
+}
+
+.slidev-layout table {
+  border-collapse: collapse;
+}
+
+.slidev-layout th {
+  font-weight: 400;
+  color: var(--te-accent);
+  border-bottom: 2px solid var(--te-accent);
+}
+
+.slidev-layout td {
+  border-bottom: 1px solid var(--te-accent-pale);
+}
+
+.slidev-layout :not(pre) > code {
+  background: var(--te-accent-pale);
+  color: var(--te-ink);
+  padding: 0.1em 0.3em;
+  font-size: 0.9em;
+}
+
+::selection {
+  background: var(--te-accent);
+  color: var(--te-paper);
+}
+
+.slidev-layout .te-lead {
+  font-size: 1.35em;
+  line-height: 1.42;
+}
+
+.slidev-layout .te-muted {
+  color: var(--te-muted);
+}
+
+.slidev-layout .te-small {
+  font-size: 0.8em;
+  color: var(--te-muted);
+}
+
+.slidev-layout .te-panel {
+  background: var(--te-accent-pale);
+  padding: 1em 1.2em;
+}
+
+.slidev-layout .te-ref {
+  font-family: var(--te-body-font);
+  font-size: 0.6rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--te-muted);
+  margin: 1em 0 0.3em;
+}
