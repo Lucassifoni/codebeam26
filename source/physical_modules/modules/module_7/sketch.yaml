@@ -1,0 +1,5 @@
+# No profile here on purpose: arduino-cli forbids --libraries together with
+# --profile, and the modules build against the in-tree libraries under lib/.
+# default_fqbn/default_port are honoured by compile/upload when no -b/-p given.
+default_fqbn: esp32:esp32:esp32:UploadSpeed=115200
+default_port: /dev/cu.usbserial-1240

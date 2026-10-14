@@ -1,0 +1,4 @@
+# ESP32 Dev Module; UploadSpeed pinned to 115200 to match the known-good config.
+# Override the port at the command line: make upload MODULE=nfc_diag PORT=/dev/cu.usbserial-XXXX
+default_fqbn: esp32:esp32:esp32:UploadSpeed=115200
+default_port: /dev/cu.usbserial-1240
