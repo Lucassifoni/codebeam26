@@ -1,0 +1,3652 @@
+{
+  "components": [
+    {
+      "attrs": {
+        "action": "uppercase",
+        "char": "",
+        "led": 5,
+        "module": "2",
+        "shift": ""
+      },
+      "component_id": "button_0",
+      "group_id": "1767",
+      "module": "Hardware.Components.PushButtonWithLed",
+      "position": {
+        "x": 939,
+        "y": -553
+      }
+    },
+    {
+      "attrs": {
+        "action": "source_numbers",
+        "char": "",
+        "led": 6,
+        "module": "2",
+        "shift": ""
+      },
+      "component_id": "button_1",
+      "group_id": "1767",
+      "module": "Hardware.Components.PushButtonWithLed",
+      "position": {
+        "x": 1028,
+        "y": -450
+      }
+    },
+    {
+      "attrs": {
+        "action": "source_alpha_upper",
+        "char": "",
+        "led": 4,
+        "module": "2",
+        "shift": ""
+      },
+      "component_id": "button_2",
+      "group_id": "1767",
+      "module": "Hardware.Components.PushButtonWithLed",
+      "position": {
+        "x": 944,
+        "y": -450
+      }
+    },
+    {
+      "attrs": {
+        "action": "source_alpha_lower",
+        "char": "",
+        "led": 1,
+        "module": "2",
+        "shift": ""
+      },
+      "component_id": "button_3",
+      "group_id": "1767",
+      "module": "Hardware.Components.PushButtonWithLed",
+      "position": {
+        "x": 848,
+        "y": -449
+      }
+    },
+    {
+      "attrs": {
+        "action": "source_font_name",
+        "char": "",
+        "led": 3,
+        "module": "2",
+        "shift": ""
+      },
+      "component_id": "button_4",
+      "group_id": "1767",
+      "module": "Hardware.Components.PushButtonWithLed",
+      "position": {
+        "x": 762,
+        "y": -449
+      }
+    },
+    {
+      "attrs": {
+        "action": "align_center",
+        "char": "",
+        "led": 7,
+        "module": "2",
+        "shift": ""
+      },
+      "component_id": "button_5",
+      "group_id": "1767",
+      "module": "Hardware.Components.PushButtonWithLed",
+      "position": {
+        "x": 769,
+        "y": -554
+      }
+    },
+    {
+      "attrs": {
+        "action": "align_left",
+        "char": "",
+        "led": 2,
+        "module": "2",
+        "shift": ""
+      },
+      "component_id": "button_6",
+      "group_id": "1767",
+      "module": "Hardware.Components.PushButtonWithLed",
+      "position": {
+        "x": 682,
+        "y": -554
+      }
+    },
+    {
+      "attrs": {
+        "action": "source_user",
+        "char": "",
+        "led": 0,
+        "module": "2",
+        "shift": ""
+      },
+      "component_id": "button_7",
+      "group_id": "1767",
+      "module": "Hardware.Components.PushButtonWithLed",
+      "position": {
+        "x": 681,
+        "y": -449
+      }
+    },
+    {
+      "attrs": {
+        "module": "2"
+      },
+      "component_id": "font_selector",
+      "group_id": null,
+      "module": "Hardware.Components.FontSelector",
+      "position": {
+        "x": 1169,
+        "y": -1347
+      }
+    },
+    {
+      "attrs": {
+        "duty_max": 230,
+        "duty_min": 0,
+        "gauge": 2,
+        "module": "2"
+      },
+      "component_id": "font_size_gauge",
+      "group_id": "11458",
+      "module": "Hardware.Components.NeedleGauge",
+      "position": {
+        "x": 455,
+        "y": -1031
+      }
+    },
+    {
+      "attrs": {
+        "axis": 1,
+        "center": 2100,
+        "deadzone": 200,
+        "high": 4090,
+        "invert": true,
+        "low": 300,
+        "module": 2,
+        "sensitivity": 0.4,
+        "smoothing": "0.2"
+      },
+      "component_id": "font_size_joystick",
+      "group_id": "11458",
+      "module": "Hardware.Components.Joystick",
+      "position": {
+        "x": 462,
+        "y": -888
+      }
+    },
+    {
+      "attrs": {
+        "duty_max": 230,
+        "duty_min": 0,
+        "gauge": 1,
+        "module": "2"
+      },
+      "component_id": "kerning_gauge",
+      "group_id": "11458",
+      "module": "Hardware.Components.NeedleGauge",
+      "position": {
+        "x": 914,
+        "y": -1027
+      }
+    },
+    {
+      "attrs": {
+        "axis": 2,
+        "center": 2100,
+        "deadzone": 200,
+        "high": 4090,
+        "invert": true,
+        "low": 300,
+        "module": 2,
+        "sensitivity": 0.4,
+        "smoothing": "0.2"
+      },
+      "component_id": "kerning_joystick",
+      "group_id": "11458",
+      "module": "Hardware.Components.Joystick",
+      "position": {
+        "x": 912,
+        "y": -885
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "−",
+        "shift": "½"
+      },
+      "component_id": "key_10_0",
+      "group_id": "row_6",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 2761,
+        "y": 596
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "≠",
+        "shift": "⅔"
+      },
+      "component_id": "key_10_1",
+      "group_id": "row_6",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 2881,
+        "y": 596
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "&",
+        "shift": null
+      },
+      "component_id": "key_10_10",
+      "group_id": "row_6",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 1681,
+        "y": 596
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "@",
+        "shift": null
+      },
+      "component_id": "key_10_11",
+      "group_id": "row_6",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 1801,
+        "y": 596
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "™",
+        "shift": "℠"
+      },
+      "component_id": "key_10_12",
+      "group_id": "row_6",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 601,
+        "y": 596
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "n",
+        "shift": "N"
+      },
+      "component_id": "key_10_13",
+      "group_id": "row_6",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 1561,
+        "y": 596
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "v",
+        "shift": "V"
+      },
+      "component_id": "key_10_14",
+      "group_id": "row_6",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 1321,
+        "y": 596
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "b",
+        "shift": "B"
+      },
+      "component_id": "key_10_15",
+      "group_id": "row_6",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 1441,
+        "y": 596
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "•",
+        "shift": "◉"
+      },
+      "component_id": "key_10_16",
+      "group_id": "row_6",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 721,
+        "y": 596
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "◦",
+        "shift": "◎"
+      },
+      "component_id": "key_10_17",
+      "group_id": "row_6",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 841,
+        "y": 596
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": null,
+        "shift": null
+      },
+      "component_id": "key_10_18",
+      "group_id": null,
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 2160,
+        "y": 600
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "w",
+        "shift": "W"
+      },
+      "component_id": "key_10_19",
+      "group_id": "row_6",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 961,
+        "y": 596
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "",
+        "shift": null
+      },
+      "component_id": "key_10_2",
+      "group_id": "row_6",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 3001,
+        "y": 596
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "№",
+        "shift": null
+      },
+      "component_id": "key_10_20",
+      "group_id": "row_6",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 1,
+        "y": 596
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "®",
+        "shift": null
+      },
+      "component_id": "key_10_21",
+      "group_id": "row_6",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 361,
+        "y": 596
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "©",
+        "shift": "℗"
+      },
+      "component_id": "key_10_22",
+      "group_id": "row_6",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 481,
+        "y": 596
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "x",
+        "shift": "X"
+      },
+      "component_id": "key_10_23",
+      "group_id": "row_6",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 1081,
+        "y": 596
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "§",
+        "shift": "¶"
+      },
+      "component_id": "key_10_24",
+      "group_id": "row_6",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 241,
+        "y": 596
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "ª",
+        "shift": "º"
+      },
+      "component_id": "key_10_25",
+      "group_id": "row_6",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 121,
+        "y": 596
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "+",
+        "shift": "¼"
+      },
+      "component_id": "key_10_28",
+      "group_id": "row_6",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 2641,
+        "y": 596
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "0",
+        "shift": null
+      },
+      "component_id": "key_10_29",
+      "group_id": "row_6",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 2521,
+        "y": 596
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "#",
+        "shift": null
+      },
+      "component_id": "key_10_3",
+      "group_id": "row_6",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 1921,
+        "y": 596
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "↕",
+        "shift": null
+      },
+      "component_id": "key_10_4",
+      "group_id": "row_6",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 2281,
+        "y": 596
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "⇅",
+        "shift": null
+      },
+      "component_id": "key_10_5",
+      "group_id": "row_6",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 2161,
+        "y": 596
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": null,
+        "shift": null
+      },
+      "component_id": "key_10_6",
+      "group_id": null,
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 720,
+        "y": 600
+      }
+    },
+    {
+      "attrs": {
+        "action": "",
+        "char": "",
+        "red": false,
+        "shift": ""
+      },
+      "component_id": "key_10_7",
+      "group_id": "row_6",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 2041,
+        "y": 596
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "⇵",
+        "shift": null
+      },
+      "component_id": "key_10_8",
+      "group_id": "row_6",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 2401,
+        "y": 596
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "c",
+        "shift": "C"
+      },
+      "component_id": "key_10_9",
+      "group_id": "row_6",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 1201,
+        "y": 596
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "3",
+        "shift": "$"
+      },
+      "component_id": "key_11_0",
+      "group_id": "row_7",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 2971,
+        "y": 475
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "=",
+        "shift": "⅛"
+      },
+      "component_id": "key_11_1",
+      "group_id": "row_7",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 3091,
+        "y": 475
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "j",
+        "shift": "J"
+      },
+      "component_id": "key_11_10",
+      "group_id": "row_7",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 1891,
+        "y": 475
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "k",
+        "shift": "K"
+      },
+      "component_id": "key_11_11",
+      "group_id": "row_7",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 2011,
+        "y": 475
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "*",
+        "shift": null
+      },
+      "component_id": "key_11_12",
+      "group_id": "row_7",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 691,
+        "y": 475
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "h",
+        "shift": "H"
+      },
+      "component_id": "key_11_13",
+      "group_id": "row_7",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 1771,
+        "y": 475
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "f",
+        "shift": "F"
+      },
+      "component_id": "key_11_14",
+      "group_id": "row_7",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 1531,
+        "y": 475
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "g",
+        "shift": "G"
+      },
+      "component_id": "key_11_15",
+      "group_id": "row_7",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 1651,
+        "y": 475
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "†",
+        "shift": null
+      },
+      "component_id": "key_11_16",
+      "group_id": "row_7",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 811,
+        "y": 475
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "‡",
+        "shift": null
+      },
+      "component_id": "key_11_17",
+      "group_id": "row_7",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 931,
+        "y": 475
+      }
+    },
+    {
+      "attrs": {
+        "action": "shift",
+        "char": null,
+        "red": true,
+        "shift": null
+      },
+      "component_id": "key_11_18",
+      "group_id": "row_7",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 1051,
+        "y": 475
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "q",
+        "shift": "Q"
+      },
+      "component_id": "key_11_19",
+      "group_id": "row_7",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 1171,
+        "y": 475
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "♣",
+        "shift": null
+      },
+      "component_id": "key_11_2",
+      "group_id": "row_7",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 3211,
+        "y": 475
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "·",
+        "shift": null
+      },
+      "component_id": "key_11_20",
+      "group_id": "row_7",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 91,
+        "y": 475
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "—",
+        "shift": null
+      },
+      "component_id": "key_11_21",
+      "group_id": "row_7",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 451,
+        "y": 475
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "_",
+        "shift": null
+      },
+      "component_id": "key_11_22",
+      "group_id": "row_7",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 571,
+        "y": 475
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "s",
+        "shift": "S"
+      },
+      "component_id": "key_11_23",
+      "group_id": "row_7",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 1291,
+        "y": 475
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "–",
+        "shift": null
+      },
+      "component_id": "key_11_24",
+      "group_id": "row_7",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 331,
+        "y": 475
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "-",
+        "shift": null
+      },
+      "component_id": "key_11_25",
+      "group_id": "row_7",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 211,
+        "y": 475
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "2",
+        "shift": "€"
+      },
+      "component_id": "key_11_28",
+      "group_id": "row_7",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 2851,
+        "y": 475
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "1",
+        "shift": "#"
+      },
+      "component_id": "key_11_29",
+      "group_id": "row_7",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 2731,
+        "y": 475
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "l",
+        "shift": "L"
+      },
+      "component_id": "key_11_3",
+      "group_id": "row_7",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 2131,
+        "y": 475
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "",
+        "shift": null
+      },
+      "component_id": "key_11_4",
+      "group_id": "row_7",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 2491,
+        "y": 475
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "⇆",
+        "shift": null
+      },
+      "component_id": "key_11_5",
+      "group_id": "row_7",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 2371,
+        "y": 475
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "m",
+        "shift": "M"
+      },
+      "component_id": "key_11_7",
+      "group_id": "row_7",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 2251,
+        "y": 475
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "⇄",
+        "shift": null
+      },
+      "component_id": "key_11_8",
+      "group_id": "row_7",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 2611,
+        "y": 475
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "d",
+        "shift": "D"
+      },
+      "component_id": "key_11_9",
+      "group_id": "row_7",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 1411,
+        "y": 475
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "6",
+        "shift": "£"
+      },
+      "component_id": "key_12_0",
+      "group_id": "row_5",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 2801,
+        "y": 365
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "÷",
+        "shift": "⅓"
+      },
+      "component_id": "key_12_1",
+      "group_id": "row_5",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 2921,
+        "y": 365
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "u",
+        "shift": "U"
+      },
+      "component_id": "key_12_10",
+      "group_id": "row_5",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 1721,
+        "y": 365
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "i",
+        "shift": "I"
+      },
+      "component_id": "key_12_11",
+      "group_id": "row_5",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 1841,
+        "y": 365
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "}",
+        "shift": null
+      },
+      "component_id": "key_12_12",
+      "group_id": "row_5",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 641,
+        "y": 365
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "y",
+        "shift": "Y"
+      },
+      "component_id": "key_12_13",
+      "group_id": "row_5",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 1601,
+        "y": 365
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "r",
+        "shift": "R"
+      },
+      "component_id": "key_12_14",
+      "group_id": "row_5",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 1361,
+        "y": 365
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "t",
+        "shift": "T"
+      },
+      "component_id": "key_12_15",
+      "group_id": "row_5",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 1481,
+        "y": 365
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "|",
+        "shift": null
+      },
+      "component_id": "key_12_16",
+      "group_id": "row_5",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 761,
+        "y": 365
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "¦",
+        "shift": null
+      },
+      "component_id": "key_12_17",
+      "group_id": "row_5",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 881,
+        "y": 365
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "a",
+        "shift": "A"
+      },
+      "component_id": "key_12_19",
+      "group_id": "row_5",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 1001,
+        "y": 365
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "♢",
+        "shift": null
+      },
+      "component_id": "key_12_2",
+      "group_id": "row_5",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 3041,
+        "y": 365
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "(",
+        "shift": null
+      },
+      "component_id": "key_12_20",
+      "group_id": "row_5",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 41,
+        "y": 365
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "]",
+        "shift": null
+      },
+      "component_id": "key_12_21",
+      "group_id": "row_5",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 401,
+        "y": 365
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "{",
+        "shift": null
+      },
+      "component_id": "key_12_22",
+      "group_id": "row_5",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 521,
+        "y": 365
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "z",
+        "shift": "Z"
+      },
+      "component_id": "key_12_23",
+      "group_id": "row_5",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 1121,
+        "y": 365
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "[",
+        "shift": null
+      },
+      "component_id": "key_12_24",
+      "group_id": "row_5",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 281,
+        "y": 365
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": ")",
+        "shift": null
+      },
+      "component_id": "key_12_25",
+      "group_id": "row_5",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 161,
+        "y": 365
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "5",
+        "shift": "₽"
+      },
+      "component_id": "key_12_28",
+      "group_id": "row_5",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 2681,
+        "y": 365
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "4",
+        "shift": "¢"
+      },
+      "component_id": "key_12_29",
+      "group_id": "row_5",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 2561,
+        "y": 365
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "o",
+        "shift": "O"
+      },
+      "component_id": "key_12_3",
+      "group_id": "row_5",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 1961,
+        "y": 365
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "🡣",
+        "shift": "↓"
+      },
+      "component_id": "key_12_4",
+      "group_id": "row_5",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 2321,
+        "y": 365
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "🡧",
+        "shift": "↙"
+      },
+      "component_id": "key_12_5",
+      "group_id": "row_5",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 2201,
+        "y": 365
+      }
+    },
+    {
+      "attrs": {
+        "action": "enter",
+        "char": null,
+        "red": true,
+        "shift": null
+      },
+      "component_id": "key_12_6",
+      "group_id": null,
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 2150,
+        "y": 354
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "p",
+        "shift": "P"
+      },
+      "component_id": "key_12_7",
+      "group_id": "row_5",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 2081,
+        "y": 365
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "🡦",
+        "shift": "↘"
+      },
+      "component_id": "key_12_8",
+      "group_id": "row_5",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 2441,
+        "y": 365
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "e",
+        "shift": "E"
+      },
+      "component_id": "key_12_9",
+      "group_id": "row_5",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 1241,
+        "y": 365
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "9",
+        "shift": "∞"
+      },
+      "component_id": "key_13_0",
+      "group_id": "row_4",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 2810,
+        "y": 252
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "×",
+        "shift": "¾"
+      },
+      "component_id": "key_13_1",
+      "group_id": "row_4",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 2930,
+        "y": 252
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "æ",
+        "shift": "Æ"
+      },
+      "component_id": "key_13_10",
+      "group_id": "row_4",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 1730,
+        "y": 252
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "œ",
+        "shift": "Œ"
+      },
+      "component_id": "key_13_11",
+      "group_id": "row_4",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 1850,
+        "y": 252
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "„",
+        "shift": null
+      },
+      "component_id": "key_13_12",
+      "group_id": "row_4",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 650,
+        "y": 252
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "ÿ",
+        "shift": "Ÿ"
+      },
+      "component_id": "key_13_13",
+      "group_id": "row_4",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 1610,
+        "y": 252
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "û",
+        "shift": "Û"
+      },
+      "component_id": "key_13_14",
+      "group_id": "row_4",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 1370,
+        "y": 252
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "ü",
+        "shift": "Ü"
+      },
+      "component_id": "key_13_15",
+      "group_id": "row_4",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 1490,
+        "y": 252
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "«",
+        "shift": "‹"
+      },
+      "component_id": "key_13_16",
+      "group_id": "row_4",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 770,
+        "y": 252
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "»",
+        "shift": "›"
+      },
+      "component_id": "key_13_17",
+      "group_id": "row_4",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 890,
+        "y": 252
+      }
+    },
+    {
+      "attrs": {
+        "action": "capslock",
+        "char": null,
+        "red": true,
+        "shift": null
+      },
+      "component_id": "key_13_18",
+      "group_id": null,
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 1065,
+        "y": 268
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "ô",
+        "shift": "Ô"
+      },
+      "component_id": "key_13_19",
+      "group_id": "row_4",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 1010,
+        "y": 252
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "♡",
+        "shift": null
+      },
+      "component_id": "key_13_2",
+      "group_id": "row_4",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 3050,
+        "y": 252
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "’",
+        "shift": null
+      },
+      "component_id": "key_13_20",
+      "group_id": "row_4",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 50,
+        "y": 252
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "“",
+        "shift": null
+      },
+      "component_id": "key_13_21",
+      "group_id": "row_4",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 410,
+        "y": 252
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "‚",
+        "shift": null
+      },
+      "component_id": "key_13_22",
+      "group_id": "row_4",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 530,
+        "y": 252
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "ö",
+        "shift": "Ö"
+      },
+      "component_id": "key_13_23",
+      "group_id": "row_4",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 1130,
+        "y": 252
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "”",
+        "shift": null
+      },
+      "component_id": "key_13_24",
+      "group_id": "row_4",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 290,
+        "y": 252
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "‘",
+        "shift": null
+      },
+      "component_id": "key_13_25",
+      "group_id": "row_4",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 170,
+        "y": 252
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "8",
+        "shift": "°"
+      },
+      "component_id": "key_13_28",
+      "group_id": "row_4",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 2690,
+        "y": 252
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "7",
+        "shift": "¥"
+      },
+      "component_id": "key_13_29",
+      "group_id": "row_4",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 2570,
+        "y": 252
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "ß",
+        "shift": "ẞ"
+      },
+      "component_id": "key_13_3",
+      "group_id": "row_4",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 1970,
+        "y": 252
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "⬱",
+        "shift": null
+      },
+      "component_id": "key_13_4",
+      "group_id": "row_4",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 2330,
+        "y": 252
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "🡠",
+        "shift": "←"
+      },
+      "component_id": "key_13_5",
+      "group_id": "row_4",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 2210,
+        "y": 252
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "ø",
+        "shift": "Ø"
+      },
+      "component_id": "key_13_7",
+      "group_id": "row_4",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 2090,
+        "y": 252
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "🡢",
+        "shift": "→"
+      },
+      "component_id": "key_13_8",
+      "group_id": "row_4",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 2450,
+        "y": 252
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "ù",
+        "shift": "Ù"
+      },
+      "component_id": "key_13_9",
+      "group_id": "row_4",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 1250,
+        "y": 252
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "<",
+        "shift": "⅞"
+      },
+      "component_id": "key_14_0",
+      "group_id": "row_3",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 2880,
+        "y": 139
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": ">",
+        "shift": "%"
+      },
+      "component_id": "key_14_1",
+      "group_id": "row_3",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 3000,
+        "y": 139
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "ê",
+        "shift": "Ê"
+      },
+      "component_id": "key_14_10",
+      "group_id": "row_3",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 1680,
+        "y": 139
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "ë",
+        "shift": "Ë"
+      },
+      "component_id": "key_14_11",
+      "group_id": "row_3",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 1800,
+        "y": 139
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "?",
+        "shift": "¿"
+      },
+      "component_id": "key_14_12",
+      "group_id": "row_3",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 600,
+        "y": 139
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "è",
+        "shift": "È"
+      },
+      "component_id": "key_14_13",
+      "group_id": "row_3",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 1560,
+        "y": 139
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "ç",
+        "shift": "Ç"
+      },
+      "component_id": "key_14_14",
+      "group_id": "row_3",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 1320,
+        "y": 139
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "é",
+        "shift": "É"
+      },
+      "component_id": "key_14_15",
+      "group_id": "row_3",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 1440,
+        "y": 139
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "…",
+        "shift": "⋮"
+      },
+      "component_id": "key_14_16",
+      "group_id": "row_3",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 720,
+        "y": 139
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "/",
+        "shift": "\\"
+      },
+      "component_id": "key_14_17",
+      "group_id": "row_3",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 840,
+        "y": 139
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "à",
+        "shift": "À"
+      },
+      "component_id": "key_14_19",
+      "group_id": "row_3",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 960,
+        "y": 139
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "♠",
+        "shift": null
+      },
+      "component_id": "key_14_2",
+      "group_id": "row_3",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 3120,
+        "y": 139
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": ".",
+        "shift": null
+      },
+      "component_id": "key_14_20",
+      "group_id": "row_3",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 0,
+        "y": 139
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": ";",
+        "shift": null
+      },
+      "component_id": "key_14_21",
+      "group_id": "row_3",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 360,
+        "y": 139
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "!",
+        "shift": "¡"
+      },
+      "component_id": "key_14_22",
+      "group_id": "row_3",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 480,
+        "y": 139
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "â",
+        "shift": "Â"
+      },
+      "component_id": "key_14_23",
+      "group_id": "row_3",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 1080,
+        "y": 139
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": ":",
+        "shift": null
+      },
+      "component_id": "key_14_24",
+      "group_id": "row_3",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 240,
+        "y": 139
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": ",",
+        "shift": null
+      },
+      "component_id": "key_14_25",
+      "group_id": "row_3",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 120,
+        "y": 139
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "≈",
+        "shift": "⅝"
+      },
+      "component_id": "key_14_28",
+      "group_id": "row_3",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 2760,
+        "y": 139
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "~",
+        "shift": "⅜"
+      },
+      "component_id": "key_14_29",
+      "group_id": "row_3",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 2640,
+        "y": 139
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "î",
+        "shift": "Î"
+      },
+      "component_id": "key_14_3",
+      "group_id": "row_3",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 1920,
+        "y": 139
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "🡡",
+        "shift": "↑"
+      },
+      "component_id": "key_14_4",
+      "group_id": "row_3",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 2400,
+        "y": 139
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "🡤",
+        "shift": "↖"
+      },
+      "component_id": "key_14_5",
+      "group_id": "row_3",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 2280,
+        "y": 139
+      }
+    },
+    {
+      "attrs": {
+        "action": "backspace",
+        "char": null,
+        "red": true,
+        "shift": null
+      },
+      "component_id": "key_14_6",
+      "group_id": "row_3",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 2160,
+        "y": 139
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "ï",
+        "shift": "Ï"
+      },
+      "component_id": "key_14_7",
+      "group_id": "row_3",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 2040,
+        "y": 139
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "🡥",
+        "shift": "↗"
+      },
+      "component_id": "key_14_8",
+      "group_id": "row_3",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 2520,
+        "y": 139
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "ä",
+        "shift": "Ä"
+      },
+      "component_id": "key_14_9",
+      "group_id": "row_3",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 1200,
+        "y": 139
+      }
+    },
+    {
+      "attrs": {
+        "action": "dead",
+        "char": "¯",
+        "shift": null
+      },
+      "component_id": "key_15_10",
+      "group_id": "row_2",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 1817,
+        "y": 22
+      }
+    },
+    {
+      "attrs": {
+        "action": "dead",
+        "char": "˘",
+        "shift": null
+      },
+      "component_id": "key_15_11",
+      "group_id": "row_2",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 1937,
+        "y": 22
+      }
+    },
+    {
+      "attrs": {
+        "action": "dead",
+        "char": "˜",
+        "shift": null
+      },
+      "component_id": "key_15_13",
+      "group_id": "row_2",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 1697,
+        "y": 22
+      }
+    },
+    {
+      "attrs": {
+        "action": "dead",
+        "char": "ˇ",
+        "shift": null
+      },
+      "component_id": "key_15_14",
+      "group_id": "row_2",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 1457,
+        "y": 22
+      }
+    },
+    {
+      "attrs": {
+        "action": "dead",
+        "char": "¨",
+        "shift": null
+      },
+      "component_id": "key_15_15",
+      "group_id": "row_2",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 1577,
+        "y": 22
+      }
+    },
+    {
+      "attrs": {
+        "action": "dead",
+        "char": "¸",
+        "shift": null
+      },
+      "component_id": "key_15_18",
+      "group_id": "row_2",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 977,
+        "y": 22
+      }
+    },
+    {
+      "attrs": {
+        "action": "dead",
+        "char": "´",
+        "shift": null
+      },
+      "component_id": "key_15_19",
+      "group_id": "row_2",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 1097,
+        "y": 22
+      }
+    },
+    {
+      "attrs": {
+        "action": "dead",
+        "char": "`",
+        "shift": null
+      },
+      "component_id": "key_15_23",
+      "group_id": "row_2",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 1217,
+        "y": 22
+      }
+    },
+    {
+      "attrs": {
+        "action": "dead",
+        "char": "˚",
+        "shift": null
+      },
+      "component_id": "key_15_3",
+      "group_id": "row_2",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 2057,
+        "y": 22
+      }
+    },
+    {
+      "attrs": {
+        "action": "dead",
+        "char": "˛",
+        "shift": null
+      },
+      "component_id": "key_15_6",
+      "group_id": "row_2",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 2297,
+        "y": 22
+      }
+    },
+    {
+      "attrs": {
+        "action": "dead",
+        "char": "˝",
+        "shift": null
+      },
+      "component_id": "key_15_7",
+      "group_id": "row_2",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 2177,
+        "y": 22
+      }
+    },
+    {
+      "attrs": {
+        "action": "dead",
+        "char": "ˆ",
+        "shift": null
+      },
+      "component_id": "key_15_9",
+      "group_id": "row_2",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 1337,
+        "y": 22
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "😹",
+        "shift": null
+      },
+      "component_id": "key_1_0",
+      "group_id": "row_0",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 3014,
+        "y": -205
+      }
+    },
+    {
+      "attrs": {
+        "action": "",
+        "char": "😺",
+        "red": "false",
+        "shift": ""
+      },
+      "component_id": "key_1_1",
+      "group_id": null,
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 3126,
+        "y": -210
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "😝",
+        "shift": null
+      },
+      "component_id": "key_1_10",
+      "group_id": "row_0",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 1814,
+        "y": -205
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "😞",
+        "shift": null
+      },
+      "component_id": "key_1_11",
+      "group_id": "row_0",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 1934,
+        "y": -205
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "😇",
+        "shift": null
+      },
+      "component_id": "key_1_12",
+      "group_id": "row_0",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 614,
+        "y": -205
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "😜",
+        "shift": null
+      },
+      "component_id": "key_1_13",
+      "group_id": "row_0",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 1694,
+        "y": -205
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "😘",
+        "shift": null
+      },
+      "component_id": "key_1_14",
+      "group_id": "row_0",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 1454,
+        "y": -205
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "😛",
+        "shift": null
+      },
+      "component_id": "key_1_15",
+      "group_id": "row_0",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 1574,
+        "y": -205
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "😉",
+        "shift": null
+      },
+      "component_id": "key_1_16",
+      "group_id": "row_0",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 734,
+        "y": -205
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "😊",
+        "shift": null
+      },
+      "component_id": "key_1_17",
+      "group_id": "row_0",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 854,
+        "y": -205
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "😋",
+        "shift": null
+      },
+      "component_id": "key_1_18",
+      "group_id": "row_0",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 974,
+        "y": -205
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "😎",
+        "shift": null
+      },
+      "component_id": "key_1_19",
+      "group_id": "row_0",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 1094,
+        "y": -205
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "😀",
+        "shift": null
+      },
+      "component_id": "key_1_20",
+      "group_id": "row_0",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 14,
+        "y": -205
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "😅",
+        "shift": null
+      },
+      "component_id": "key_1_21",
+      "group_id": "row_0",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 374,
+        "y": -205
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "😆",
+        "shift": null
+      },
+      "component_id": "key_1_22",
+      "group_id": "row_0",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 494,
+        "y": -205
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "😒",
+        "shift": null
+      },
+      "component_id": "key_1_23",
+      "group_id": "row_0",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 1214,
+        "y": -205
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "😄",
+        "shift": null
+      },
+      "component_id": "key_1_24",
+      "group_id": "row_0",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 254,
+        "y": -205
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "😃",
+        "shift": null
+      },
+      "component_id": "key_1_25",
+      "group_id": "row_0",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 134,
+        "y": -205
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "😸",
+        "shift": null
+      },
+      "component_id": "key_1_28",
+      "group_id": "row_0",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 2894,
+        "y": -205
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "😵",
+        "shift": null
+      },
+      "component_id": "key_1_29",
+      "group_id": "row_0",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 2774,
+        "y": -205
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "😠",
+        "shift": null
+      },
+      "component_id": "key_1_3",
+      "group_id": "row_0",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 2054,
+        "y": -205
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "😳",
+        "shift": null
+      },
+      "component_id": "key_1_4",
+      "group_id": "row_0",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 2534,
+        "y": -205
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "😲",
+        "shift": null
+      },
+      "component_id": "key_1_5",
+      "group_id": "row_0",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 2414,
+        "y": -205
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "😭",
+        "shift": null
+      },
+      "component_id": "key_1_6",
+      "group_id": "row_0",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 2294,
+        "y": -205
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "😤",
+        "shift": null
+      },
+      "component_id": "key_1_7",
+      "group_id": "row_0",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 2174,
+        "y": -205
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "😴",
+        "shift": null
+      },
+      "component_id": "key_1_8",
+      "group_id": "row_0",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 2654,
+        "y": -205
+      }
+    },
+    {
+      "attrs": {
+        "action": null,
+        "char": "😖",
+        "shift": null
+      },
+      "component_id": "key_1_9",
+      "group_id": "row_0",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 1334,
+        "y": -205
+      }
+    },
+    {
+      "attrs": {
+        "action": "",
+        "char": "🤣",
+        "red": false,
+        "shift": ""
+      },
+      "component_id": "key_8_10",
+      "group_id": "row_1",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 1706,
+        "y": -108
+      }
+    },
+    {
+      "attrs": {
+        "action": "",
+        "char": "🤩",
+        "red": false,
+        "shift": ""
+      },
+      "component_id": "key_8_11",
+      "group_id": "row_1",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 1826,
+        "y": -108
+      }
+    },
+    {
+      "attrs": {
+        "action": "",
+        "char": "😿",
+        "red": false,
+        "shift": ""
+      },
+      "component_id": "key_8_12",
+      "group_id": "row_1",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 506,
+        "y": -108
+      }
+    },
+    {
+      "attrs": {
+        "action": "",
+        "char": "🤕",
+        "red": false,
+        "shift": ""
+      },
+      "component_id": "key_8_13",
+      "group_id": "row_1",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 1586,
+        "y": -108
+      }
+    },
+    {
+      "attrs": {
+        "action": "",
+        "char": "🤒",
+        "red": false,
+        "shift": ""
+      },
+      "component_id": "key_8_14",
+      "group_id": "row_1",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 1346,
+        "y": -108
+      }
+    },
+    {
+      "attrs": {
+        "action": "",
+        "char": "🤓",
+        "red": false,
+        "shift": ""
+      },
+      "component_id": "key_8_15",
+      "group_id": "row_1",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 1466,
+        "y": -108
+      }
+    },
+    {
+      "attrs": {
+        "action": "",
+        "char": "🙀",
+        "red": false,
+        "shift": ""
+      },
+      "component_id": "key_8_16",
+      "group_id": "row_1",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 626,
+        "y": -108
+      }
+    },
+    {
+      "attrs": {
+        "action": "",
+        "char": "🙁",
+        "red": "false",
+        "shift": ""
+      },
+      "component_id": "key_8_17",
+      "group_id": "row_1",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 746,
+        "y": -108
+      }
+    },
+    {
+      "attrs": {
+        "action": "",
+        "char": "🙂",
+        "red": "false",
+        "shift": ""
+      },
+      "component_id": "key_8_18",
+      "group_id": "row_1",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 866,
+        "y": -108
+      }
+    },
+    {
+      "attrs": {
+        "action": "",
+        "char": "🙃",
+        "red": false,
+        "shift": ""
+      },
+      "component_id": "key_8_19",
+      "group_id": "row_1",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 986,
+        "y": -108
+      }
+    },
+    {
+      "attrs": {
+        "action": "",
+        "char": "😻",
+        "red": false,
+        "shift": ""
+      },
+      "component_id": "key_8_21",
+      "group_id": "row_1",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 266,
+        "y": -108
+      }
+    },
+    {
+      "attrs": {
+        "action": "",
+        "char": "😽",
+        "red": false,
+        "shift": ""
+      },
+      "component_id": "key_8_22",
+      "group_id": "row_1",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 386,
+        "y": -108
+      }
+    },
+    {
+      "attrs": {
+        "action": "",
+        "char": "🙄",
+        "red": false,
+        "shift": ""
+      },
+      "component_id": "key_8_23",
+      "group_id": "row_1",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 1106,
+        "y": -108
+      }
+    },
+    {
+      "attrs": {
+        "action": "",
+        "char": "🧐",
+        "red": false,
+        "shift": ""
+      },
+      "component_id": "key_8_29",
+      "group_id": "row_1",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 2666,
+        "y": -108
+      }
+    },
+    {
+      "attrs": {
+        "action": "",
+        "char": "🤪",
+        "red": false,
+        "shift": ""
+      },
+      "component_id": "key_8_3",
+      "group_id": "row_1",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 1946,
+        "y": -108
+      }
+    },
+    {
+      "attrs": {
+        "action": "",
+        "char": "🥳",
+        "red": false,
+        "shift": ""
+      },
+      "component_id": "key_8_4",
+      "group_id": "row_1",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 2426,
+        "y": -108
+      }
+    },
+    {
+      "attrs": {
+        "action": "",
+        "char": "🥰",
+        "red": false,
+        "shift": ""
+      },
+      "component_id": "key_8_5",
+      "group_id": "row_1",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 2306,
+        "y": -108
+      }
+    },
+    {
+      "attrs": {
+        "action": "",
+        "char": "🤯",
+        "red": false,
+        "shift": ""
+      },
+      "component_id": "key_8_6",
+      "group_id": "row_1",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 2186,
+        "y": -108
+      }
+    },
+    {
+      "attrs": {
+        "action": "",
+        "char": "🤮",
+        "red": false,
+        "shift": ""
+      },
+      "component_id": "key_8_7",
+      "group_id": "row_1",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 2066,
+        "y": -108
+      }
+    },
+    {
+      "attrs": {
+        "action": "",
+        "char": "🥺",
+        "red": false,
+        "shift": ""
+      },
+      "component_id": "key_8_8",
+      "group_id": "row_1",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 2546,
+        "y": -108
+      }
+    },
+    {
+      "attrs": {
+        "action": "",
+        "char": "🤑",
+        "red": false,
+        "shift": ""
+      },
+      "component_id": "key_8_9",
+      "group_id": "row_1",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 1226,
+        "y": -108
+      }
+    },
+    {
+      "attrs": {
+        "action": "up",
+        "char": null,
+        "shift": null
+      },
+      "component_id": "key_9_10",
+      "group_id": "34",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 1448,
+        "y": 862
+      }
+    },
+    {
+      "attrs": {
+        "action": "right",
+        "char": null,
+        "shift": null
+      },
+      "component_id": "key_9_11",
+      "group_id": "34",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 1552,
+        "y": 926
+      }
+    },
+    {
+      "attrs": {
+        "action": "down",
+        "char": null,
+        "shift": null
+      },
+      "component_id": "key_9_13",
+      "group_id": "34",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 1449,
+        "y": 993
+      }
+    },
+    {
+      "attrs": {
+        "action": "left",
+        "char": null,
+        "shift": null
+      },
+      "component_id": "key_9_14",
+      "group_id": "34",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 1336,
+        "y": 926
+      }
+    },
+    {
+      "attrs": {
+        "action": "space",
+        "char": null,
+        "red": true,
+        "shift": null
+      },
+      "component_id": "key_9_3",
+      "group_id": "row_8",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 1488,
+        "y": 740
+      }
+    },
+    {
+      "attrs": {
+        "action": "space",
+        "char": null,
+        "red": true,
+        "shift": null
+      },
+      "component_id": "key_9_9",
+      "group_id": "row_8",
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 1368,
+        "y": 740
+      }
+    },
+    {
+      "attrs": {
+        "duty_max": 230,
+        "duty_min": 0,
+        "gauge": 0,
+        "module": "2"
+      },
+      "component_id": "line_height_gauge",
+      "group_id": "11458",
+      "module": "Hardware.Components.NeedleGauge",
+      "position": {
+        "x": 682,
+        "y": -1031
+      }
+    },
+    {
+      "attrs": {
+        "axis": 0,
+        "center": 2100,
+        "deadzone": 200,
+        "high": 4090,
+        "invert": true,
+        "low": 300,
+        "module": 2,
+        "sensitivity": 0.4,
+        "smoothing": "0.2"
+      },
+      "component_id": "line_height_joystick",
+      "group_id": "11458",
+      "module": "Hardware.Components.Joystick",
+      "position": {
+        "x": 688,
+        "y": -889
+      }
+    },
+    {
+      "attrs": {
+        "action": "RESET",
+        "char": "RESET",
+        "red": "true",
+        "shift": ""
+      },
+      "component_id": "m4_button_0",
+      "group_id": null,
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 1818,
+        "y": -717
+      }
+    },
+    {
+      "attrs": {
+        "action": "PRINT",
+        "char": "PRINT",
+        "red": "true",
+        "shift": ""
+      },
+      "component_id": "m4_button_1",
+      "group_id": null,
+      "module": "Hardware.Components.PushButton",
+      "position": {
+        "x": 1809,
+        "y": -1002
+      }
+    },
+    {
+      "attrs": {},
+      "component_id": "m4_trackball",
+      "group_id": null,
+      "module": "Hardware.Components.Trackball",
+      "position": {
+        "x": 1371,
+        "y": -911
+      }
+    },
+    {
+      "attrs": {},
+      "component_id": "printer",
+      "group_id": null,
+      "module": "Hardware.Components.Printer",
+      "position": {
+        "x": 1665,
+        "y": -1386
+      }
+    },
+    {
+      "attrs": {
+        "available_led": 0,
+        "feature": "tnum",
+        "mode": "",
+        "module": 7,
+        "status_led": "16"
+      },
+      "component_id": "switch_0_0",
+      "group_id": "11394",
+      "module": "Hardware.Components.SwitchWithTwoLeds",
+      "position": {
+        "x": -303,
+        "y": -921
+      }
+    },
+    {
+      "attrs": {
+        "available_led": 1,
+        "feature": "onum",
+        "mode": "",
+        "module": 7,
+        "status_led": "17"
+      },
+      "component_id": "switch_0_1",
+      "group_id": "11394",
+      "module": "Hardware.Components.SwitchWithTwoLeds",
+      "position": {
+        "x": -183,
+        "y": -921
+      }
+    },
+    {
+      "attrs": {
+        "available_led": 2,
+        "feature": "ss19",
+        "mode": "",
+        "module": 7,
+        "status_led": "18"
+      },
+      "component_id": "switch_0_2",
+      "group_id": "11394",
+      "module": "Hardware.Components.SwitchWithTwoLeds",
+      "position": {
+        "x": -63,
+        "y": -921
+      }
+    },
+    {
+      "attrs": {
+        "available_led": 3,
+        "feature": "ss20",
+        "mode": "",
+        "module": 7,
+        "status_led": "19"
+      },
+      "component_id": "switch_0_3",
+      "group_id": "11394",
+      "module": "Hardware.Components.SwitchWithTwoLeds",
+      "position": {
+        "x": 57,
+        "y": -921
+      }
+    },
+    {
+      "attrs": {
+        "available_led": 4,
+        "feature": "titl",
+        "mode": "",
+        "module": 7,
+        "status_led": "20"
+      },
+      "component_id": "switch_0_4",
+      "group_id": "11394",
+      "module": "Hardware.Components.SwitchWithTwoLeds",
+      "position": {
+        "x": 177,
+        "y": -921
+      }
+    },
+    {
+      "attrs": {
+        "available_led": 5,
+        "feature": "swsh",
+        "mode": "",
+        "module": 7,
+        "status_led": "21"
+      },
+      "component_id": "switch_0_5",
+      "group_id": "11394",
+      "module": "Hardware.Components.SwitchWithTwoLeds",
+      "position": {
+        "x": 297,
+        "y": -921
+      }
+    },
+    {
+      "attrs": {
+        "available_led": 6,
+        "feature": "liga",
+        "mode": "",
+        "module": 7,
+        "status_led": "12"
+      },
+      "component_id": "switch_1_0",
+      "group_id": "11394",
+      "module": "Hardware.Components.SwitchWithTwoLeds",
+      "position": {
+        "x": -303,
+        "y": -1041
+      }
+    },
+    {
+      "attrs": {
+        "available_led": 7,
+        "feature": "dlig",
+        "mode": "",
+        "module": 7,
+        "status_led": "13"
+      },
+      "component_id": "switch_1_1",
+      "group_id": "11394",
+      "module": "Hardware.Components.SwitchWithTwoLeds",
+      "position": {
+        "x": -183,
+        "y": -1041
+      }
+    },
+    {
+      "attrs": {
+        "available_led": 8,
+        "feature": "smcp",
+        "mode": "",
+        "module": 7,
+        "status_led": "14"
+      },
+      "component_id": "switch_1_2",
+      "group_id": "11394",
+      "module": "Hardware.Components.SwitchWithTwoLeds",
+      "position": {
+        "x": -63,
+        "y": -1041
+      }
+    },
+    {
+      "attrs": {
+        "available_led": 9,
+        "feature": "smcp+c2sc",
+        "mode": "",
+        "module": 7,
+        "status_led": "15"
+      },
+      "component_id": "switch_1_3",
+      "group_id": "11394",
+      "module": "Hardware.Components.SwitchWithTwoLeds",
+      "position": {
+        "x": 57,
+        "y": -1041
+      }
+    },
+    {
+      "attrs": {
+        "available_led": 10,
+        "feature": "case",
+        "mode": "",
+        "module": 7,
+        "status_led": "22"
+      },
+      "component_id": "switch_1_4",
+      "group_id": "11394",
+      "module": "Hardware.Components.SwitchWithTwoLeds",
+      "position": {
+        "x": 177,
+        "y": -1041
+      }
+    },
+    {
+      "attrs": {
+        "available_led": 11,
+        "feature": "zero",
+        "mode": "",
+        "module": 7,
+        "status_led": "23"
+      },
+      "component_id": "switch_1_5",
+      "group_id": "11394",
+      "module": "Hardware.Components.SwitchWithTwoLeds",
+      "position": {
+        "x": 297,
+        "y": -1041
+      }
+    },
+    {
+      "attrs": {
+        "available_led": 32,
+        "feature": "ss16",
+        "mode": "",
+        "module": 7,
+        "status_led": "47"
+      },
+      "component_id": "switch_2_0",
+      "group_id": "11394",
+      "module": "Hardware.Components.SwitchWithTwoLeds",
+      "position": {
+        "x": 297,
+        "y": -801
+      }
+    },
+    {
+      "attrs": {
+        "available_led": 33,
+        "feature": "ss13",
+        "mode": "",
+        "module": 7,
+        "status_led": "46"
+      },
+      "component_id": "switch_2_1",
+      "group_id": "11394",
+      "module": "Hardware.Components.SwitchWithTwoLeds",
+      "position": {
+        "x": 177,
+        "y": -801
+      }
+    },
+    {
+      "attrs": {
+        "available_led": 40,
+        "feature": "ss10",
+        "mode": "",
+        "module": 7,
+        "status_led": "45"
+      },
+      "component_id": "switch_2_2",
+      "group_id": "11394",
+      "module": "Hardware.Components.SwitchWithTwoLeds",
+      "position": {
+        "x": 57,
+        "y": -801
+      }
+    },
+    {
+      "attrs": {
+        "available_led": 41,
+        "feature": "ss07",
+        "mode": "",
+        "module": 7,
+        "status_led": "44"
+      },
+      "component_id": "switch_2_3",
+      "group_id": "11394",
+      "module": "Hardware.Components.SwitchWithTwoLeds",
+      "position": {
+        "x": -63,
+        "y": -801
+      }
+    },
+    {
+      "attrs": {
+        "available_led": 42,
+        "feature": "ss04",
+        "mode": "",
+        "module": 7,
+        "status_led": "48"
+      },
+      "component_id": "switch_2_4",
+      "group_id": "11394",
+      "module": "Hardware.Components.SwitchWithTwoLeds",
+      "position": {
+        "x": -183,
+        "y": -801
+      }
+    },
+    {
+      "attrs": {
+        "available_led": 43,
+        "feature": "ss01",
+        "mode": "",
+        "module": 7,
+        "status_led": "49"
+      },
+      "component_id": "switch_2_5",
+      "group_id": "11394",
+      "module": "Hardware.Components.SwitchWithTwoLeds",
+      "position": {
+        "x": -303,
+        "y": -801
+      }
+    },
+    {
+      "attrs": {
+        "available_led": 50,
+        "feature": "ss17",
+        "mode": "",
+        "module": 7,
+        "status_led": "34"
+      },
+      "component_id": "switch_3_0",
+      "group_id": "11394",
+      "module": "Hardware.Components.SwitchWithTwoLeds",
+      "position": {
+        "x": 297,
+        "y": -681
+      }
+    },
+    {
+      "attrs": {
+        "available_led": 51,
+        "feature": "ss14",
+        "mode": "",
+        "module": 7,
+        "status_led": "35"
+      },
+      "component_id": "switch_3_1",
+      "group_id": "11394",
+      "module": "Hardware.Components.SwitchWithTwoLeds",
+      "position": {
+        "x": 177,
+        "y": -681
+      }
+    },
+    {
+      "attrs": {
+        "available_led": 52,
+        "feature": "ss11",
+        "mode": "",
+        "module": 7,
+        "status_led": "36"
+      },
+      "component_id": "switch_3_2",
+      "group_id": "11394",
+      "module": "Hardware.Components.SwitchWithTwoLeds",
+      "position": {
+        "x": 57,
+        "y": -681
+      }
+    },
+    {
+      "attrs": {
+        "available_led": 53,
+        "feature": "ss08",
+        "mode": "",
+        "module": 7,
+        "status_led": "37"
+      },
+      "component_id": "switch_3_3",
+      "group_id": "11394",
+      "module": "Hardware.Components.SwitchWithTwoLeds",
+      "position": {
+        "x": -63,
+        "y": -681
+      }
+    },
+    {
+      "attrs": {
+        "available_led": 54,
+        "feature": "ss05",
+        "mode": "",
+        "module": 7,
+        "status_led": "38"
+      },
+      "component_id": "switch_3_4",
+      "group_id": "11394",
+      "module": "Hardware.Components.SwitchWithTwoLeds",
+      "position": {
+        "x": -183,
+        "y": -681
+      }
+    },
+    {
+      "attrs": {
+        "available_led": 55,
+        "feature": "ss02",
+        "mode": "",
+        "module": 7,
+        "status_led": "39"
+      },
+      "component_id": "switch_3_5",
+      "group_id": "11394",
+      "module": "Hardware.Components.SwitchWithTwoLeds",
+      "position": {
+        "x": -303,
+        "y": -681
+      }
+    },
+    {
+      "attrs": {
+        "available_led": 29,
+        "feature": "ss19",
+        "mode": "",
+        "module": 7,
+        "status_led": "56"
+      },
+      "component_id": "switch_4_0",
+      "group_id": "11394",
+      "module": "Hardware.Components.SwitchWithTwoLeds",
+      "position": {
+        "x": 297,
+        "y": -561
+      }
+    },
+    {
+      "attrs": {
+        "available_led": 28,
+        "feature": "ss15",
+        "mode": "",
+        "module": 7,
+        "status_led": "57"
+      },
+      "component_id": "switch_4_1",
+      "group_id": "11394",
+      "module": "Hardware.Components.SwitchWithTwoLeds",
+      "position": {
+        "x": 177,
+        "y": -561
+      }
+    },
+    {
+      "attrs": {
+        "available_led": 27,
+        "feature": "ss12",
+        "mode": "",
+        "module": 7,
+        "status_led": "58"
+      },
+      "component_id": "switch_4_2",
+      "group_id": "11394",
+      "module": "Hardware.Components.SwitchWithTwoLeds",
+      "position": {
+        "x": 57,
+        "y": -561
+      }
+    },
+    {
+      "attrs": {
+        "available_led": 26,
+        "feature": "ss09",
+        "mode": "",
+        "module": 7,
+        "status_led": "59"
+      },
+      "component_id": "switch_4_3",
+      "group_id": "11394",
+      "module": "Hardware.Components.SwitchWithTwoLeds",
+      "position": {
+        "x": -63,
+        "y": -561
+      }
+    },
+    {
+      "attrs": {
+        "available_led": 25,
+        "feature": "ss06",
+        "mode": "",
+        "module": 7,
+        "status_led": "60"
+      },
+      "component_id": "switch_4_4",
+      "group_id": "11394",
+      "module": "Hardware.Components.SwitchWithTwoLeds",
+      "position": {
+        "x": -183,
+        "y": -561
+      }
+    },
+    {
+      "attrs": {
+        "available_led": 24,
+        "feature": "ss03",
+        "mode": "",
+        "module": 7,
+        "status_led": "61"
+      },
+      "component_id": "switch_4_5",
+      "group_id": "11394",
+      "module": "Hardware.Components.SwitchWithTwoLeds",
+      "position": {
+        "x": -303,
+        "y": -561
+      }
+    },
+    {
+      "attrs": {
+        "chars_per_detent": 1,
+        "invert": true,
+        "module": "2"
+      },
+      "component_id": "text_quantity",
+      "group_id": null,
+      "module": "Hardware.Components.RotaryEncoder",
+      "position": {
+        "x": 460,
+        "y": -540
+      }
+    }
+  ],
+  "format": "bbparty.layout",
+  "version": 1
+}
