@@ -1,0 +1,8 @@
+{
+  "comment": "System faces.",
+  "fonts": [
+    { "id": "Arial", "features": ["liga", "tnum", "onum"] },
+    { "id": "Chalkboard", "features": ["liga"] },
+    { "id": "Papyrus", "features": [] }
+  ]
+}
