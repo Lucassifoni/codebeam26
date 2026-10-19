@@ -3096,7 +3096,9 @@
       }
     },
     {
-      "attrs": {},
+      "attrs": {
+        "module": 4
+      },
       "component_id": "m4_trackball",
       "group_id": null,
       "module": "Hardware.Components.Trackball",

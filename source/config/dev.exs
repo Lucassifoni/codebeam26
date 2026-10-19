@@ -34,6 +34,8 @@ config :bbparty, BbpartyWeb.Endpoint,
 
 config :bbparty, dev_routes: true
 
+config :logger, level: :info
+
 config :logger, :default_formatter, format: "[$level] $message\n"
 
 config :phoenix, :stacktrace_depth, 20
