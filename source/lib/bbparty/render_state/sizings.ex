@@ -2,7 +2,7 @@ defmodule Bbparty.RenderState.Sizings do
   alias Bbparty.RenderState
 
   @bounds %{
-    zoom: {-2.0, 2.0},
+    zoom: {-2.0, 8.0},
     kerning: {-0.2, 2.0},
     leading: {0.5, 2.0}
   }

@@ -9,7 +9,7 @@ ribbon: Code BEAM
 transition: fade
 drawings:
   persist: false
-duration: 35min
+duration: 20min
 ---
 
 # From Pure Code to Physical Controls
@@ -69,14 +69,14 @@ Used by ~500 people to create ~2000 printouts in 4 days
 - Arcade trackball (adapted to run on 3v3)
 - 3 joysticks & analog needle gauges
 - A backlit keypad (self-built)
-- Two switchboards, 32 switches with 64 indicators (self-built)
+- Two switchboards, 30 switches with 60 indicators (self-built)
 - A fake floppy disk reader (NFC tag reader)
 - A Bixolon XD5-43d sticker printer
 
 Trivia : 
 - Shift registers chains instead of IO expanders
 - DIP ICs and passive components
-- Hand wired on padboards to accomodate the short delay
+- Hand wired on padboards to accomodate the short deadline
 
 ---
 layout: media
@@ -226,6 +226,17 @@ end
 
 ---
 
+```elixir
+iex> PushButton.new(char: "a", shift: "A")
+      |> PushButton.handle_event(:key_down, nil)
+
+{:ok, %PushButton{pushed: true}, [{:key_down, %{char: "a", shift: "A", action: nil}}]}
+
+# {:ok, new state, normalized events}
+```
+
+---
+
 ### Some controls types implement `Output`
 
 ```elixir
@@ -245,7 +256,7 @@ defmodule Hardware.Components.PushButtonWithLed do
   defstruct pushed: false, lit: false, char: nil, shift: nil, action: nil, module: nil, led: nil
   def events(), do: [:key_up, :key_down, :set_pushed, :set_lit]
 
-  @impl Hardware.Output # Impure, effect the world
+  @impl Hardware.Output # Impure, affects the world
   def handle_transition(%__MODULE__{} = _old, %__MODULE__{} = new, _opts) do
     LedShadow.put(new.module, new.led, new.lit)
     :ok
@@ -329,25 +340,141 @@ fit: contain
 How events enter the system
 ---
 
+## Event loop (1/2)
+
+- An event enters from hardware 
+- Its `PhysicalComponent` is resolved from a registry
+- It enters through `handle_event/3` (or `feed_input/3` for high frequency events) 
+- The pure `handle_event/3` is called -> `{:ok, state, emits}` (emits are normalized events)
+- `PhysicalComponent` publishes : 
+  - `{:component_changed, id, new_state}` for LiveView
+  - and `{:component_event, id, event, payload}` for the core
+- Impure effects (randomness, time) are injected by `RenderStateServer`
+- `RenderState.apply` folds the event on the state
+  - ```elixir
+    {new_state, effects} = do_apply(state, event, layout)
+    {new_state, Projections.propagate(state, new_state), effects}
+    ```
+  - Dependencies of the changes are resolved and become commands
+
+---
+
+## Event loop (2/2)
+
+- `{render, commands, effects} = RenderState.apply/3`
+- `RenderStateServer` dispatches commands (adjust your gauge...) to relevant `PhysicalComponent`s
+- Components `handle_event/3` the commands and update in LiveView
+- Output-enabled `PhysicalComponent` run `handle_transition/3` and impurely drive outputs
+- Any cast effects on the world (printing) are run
+- The actual rendering updates
+
+---
+
+RenderState : easy high-level view of the logic + dedicated pure logic modules
+```elixir
+def apply(state, event, layout) do
+  {new_state, effects} = do_apply(state, event, layout)
+  {new_state, Projections.propagate(state, new_state), effects}
+end
+
+defp do_apply(state, {id, :nudge, value}, _l), do: {Sizings.nudge(state, id, value), []}
+
+defp do_apply(state, {_id, :nudge_quantity, chars}, _l),
+  do: {TextSource.nudge_quantity(state, chars), []}
+
+defp do_apply(state, {_id, :toggle_feature, tag}, _l),
+  do: {Font.toggle_feature(state, tag), []}
+
+defp do_apply(state, {_id, :set_feature, {tag, on?}}, _layout),
+  do: {Font.set_feature(state, tag, on?), []}
+
+defp do_apply(state, {_id, :select_font, font}, _layout),
+  do: {Font.select(state, font), []}
+```
+
+---
+
+```elixir
+defmodule Bbparty.RenderState.TextSource do
+  @sources %{
+    source_user: :user,
+    source_font_name: :font_name,
+    source_alpha_upper: :alpha_upper,
+    source_alpha_lower: :alpha_lower,
+    source_numbers: :numbers
+  }
+
+  def effective_text(%RenderState{text_source: :font_name, selected_font: font}), do: font || ""
+  def effective_text(%RenderState{text_source: :alpha_upper}), do: @alpha_upper
+  def effective_text(%RenderState{text_source: :alpha_lower}), do: @alpha_lower
+  def effective_text(%RenderState{text_source: :numbers}), do: @numbers
+  def effective_text(%RenderState{text_quantity: n}) when is_integer(n) and n > 0, do: TextToWrite.take(n)
+  def effective_text(%RenderState{text: text}), do: text
+  
+  def overridden?(%RenderState{text_source: source}) when source != :user, do: true
+  def overridden?(%RenderState{text_quantity: n}), do: is_integer(n) and n > 0
+  
+  def clear_quantity(state), do: %{state | text_quantity: 0, text_source: :user}
+  
+  def nudge_quantity(state, chars),
+    do: %{state | text_quantity: clamp(state.text_quantity + chars, 0, TextToWrite.count())}
+```
+---
+
 ## Build process
 
 - Design on paper
 - Implement the event + render pure loop
 - Implement the first components and the control panel / render liveview
-- Prepare the boards, generate the firmwares <small style="font-size: 0.5em">&larr; a few recurrent bugs despite the simplicity, lied about hardware faults despite firmware bugs</small>
+- Prepare the boards, generate the firmwares <small style="font-size: 0.5em">&larr; a few recurrent bugs despite the simplicity, blamed my soldering for firmware bugs</small>
 - Correct the firmwares manually
-- Let it run for days unattended
+- Let it run for days unattended at most points of the process
 - AI helped with :
   - subsequent components and helpers <small style="font-size: 0.5em">&larr; muddied my design too much for my taste</small>
   - very niche parts of the effects <small style="font-size: 0.5em">&larr; efficient but bruteforce-y</small>
   - generate paper task-lists for soldering <small style="font-size: 0.5em">&larr; very helpful, no regrets</small>
   - pimping the digital twin UI/UX <small style="font-size: 0.5em">&larr; same</small>
-- Refactor of the post-human parts in progress for the next exhibitions
+- today : Refactor in progress of the post-human parts in progress for the next exhibitions
+
 ---
 
 ## What I would change
 
-- Less distinction between event types
-- Less distinction between outputs and effects
-- Livebook instead of the codebase for all one-off commissioning scripts
+- Better distinction between event types (world event, internal command) and their handlers
+- No distinction between outputs and effects : my initial reason to separate them did not materialize
+- A connected Livebook instead of the codebase for all one-off commissioning scripts
+<br/><br/>
+### Benefits
+
+- Very late resolution of handlers
+- Live-reconfigurable installation
+- No coupling between hardware and logic
+- Other transports are easy to add
+- Liveview isn't the app but a simple renderer
+- A future pocket version is easy to imagine
+
 ---
+
+## Beyond hardware
+
+### Why manage state in a similar way for any<sup>*</sup> app
+- Easily migrate to another framework
+- Build liveview states in scripts and tests
+- Expose pure function heads and docs via MCP, interpret lists of commands
+- Universal UI + thin rendering layer
+
+---
+
+### Alternative transports : I mean it (mail demo)
+
+---
+layout: end
+---
+
+<a href="mailto:contact@turing-express.fr">contact@turing-express.fr</a>
+
+20 minutes is short : code, more photos, french version : https://pushin.eu/lsifoni/codebeam26
+
+Personal website -> <a href="https://lucassifoni.info">lucassifoni.info</a>  
+My SaaS company -> <a href="https://alzo.fr">alzo.fr</a>  
+My side-project -> <a href="https://chantepierre-optique.fr">chantepierre-optique.fr</a>
