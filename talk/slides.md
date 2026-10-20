@@ -14,8 +14,6 @@ duration: 20min
 
 ## From Pure Code to Physical Controls
 
-Designing Hardware in Elixir
-
 Lucas Sifoni / Turing-Express / Code BEAM Europe 2026
 
 ---
@@ -370,6 +368,25 @@ How events enter the system
 
 ---
 
+## Impure steps of "align left"
+
+- I press the physical key
+- ESP32 scans keys and sends `<<0x82, 6, 1>>` (key event, line 6, down)
+- Transformed to `{:frame, 0x02, <<0x82, 6, 1>>}` routes to a Module2Dispatcher
+- Module2Dispatcher calls `PhysicalComponent.handle_event(:button_6, :key_down, nil)`
+- `button_6` found in the registry, `%PushButtonWithLed{action: "align_left", module: 2, led: 2}`.
+   - `PushButtonWithLed.handle_event/3` -> `{:ok, %{state | pushed: true}, [{:key_down, %{char: "", shift: "", action: "align_left"}}]}`.
+      - broadcast `{:component_event, :button_6, :key_down, meaning}`  
+
+... pure core ...
+
+- `maybe_output/3` → `PushButtonWithLed.handle_transition/3` → `LedShadow.put(2, 2, true)`
+- `LedShadow` maintains a bit mask per board that has LEDs
+- Next 20ms tick LEDs are flushed -> `Module2.set_leds(<<0b0000_0100>>)`
+- ESP32 gets `<<0x12, 0x04>>` and lights the LED
+
+---
+
 A key press from the hardware :
 ```elixir
 PhysicalComponent.handle_event(id, :key_down, nil)
@@ -451,7 +468,7 @@ defmodule Bbparty.RenderState.TextSource do
   - very niche parts of the effects <small style="font-size: 0.5em">&larr; efficient but bruteforce-y</small>
   - generate paper task-lists for soldering <small style="font-size: 0.5em">&larr; very helpful, no regrets</small>
   - pimping the digital twin UI/UX <small style="font-size: 0.5em">&larr; same</small>
-- today : Refactor in progress of the post-human parts in progress for the next exhibitions
+- today : Refactor in progress of the post-human parts for the next exhibitions
 
 ---
 
@@ -461,14 +478,16 @@ defmodule Bbparty.RenderState.TextSource do
 - No distinction between outputs and effects : my initial reason to separate them did not materialize
 - A connected Livebook instead of the codebase for all one-off commissioning scripts
 <br/><br/>
-### Benefits
+
+## Benefits
 
 - Very late resolution of handlers
 - Live-reconfigurable installation
 - No coupling between hardware and logic
 - Other transports are easy to add
 - Liveview isn't the app but a simple renderer
-- **The simulator is the system**
+<br/><br/>
+## &rarr; **The simulator is the system**
 
 ---
 
