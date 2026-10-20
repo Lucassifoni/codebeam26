@@ -12,7 +12,7 @@ drawings:
 duration: 20min
 ---
 
-# From Pure Code to Physical Controls
+## From Pure Code to Physical Controls
 
 Designing Hardware in Elixir
 
@@ -150,8 +150,9 @@ loop: false
 
 <br/><br/><br/>
 ## How do we discover and refine our design ?
-- Simulate each component in Elixir
+- **Simulate each component in Elixir**
 - Keep the logic as pure as possible
+- **Compose the system from components in a control panel**
 - Move them around, experiment with different types of interactions and effects
 - Advance the build, it helps refine the code
 - Refine the code, it helps advance the build
@@ -297,7 +298,6 @@ defmodule Hardware.Components.NeedleGauge.Display do
 layout: media
 media: components_rendered.png
 ---
-
 ---
 
 ### Behavior = type + instance, a `PhysicalComponent` GenServer
@@ -367,6 +367,23 @@ How events enter the system
 - Output-enabled `PhysicalComponent` run `handle_transition/3` and impurely drive outputs
 - Any cast effects on the world (printing) are run
 - The actual rendering updates
+
+---
+
+A key press from the hardware :
+```elixir
+PhysicalComponent.handle_event(id, :key_down, nil)
+```
+
+A key press from liveview :
+```elixir
+PhysicalComponent.handle_event(id, :key_down, nil)
+```
+
+A key press from elsewhere :
+```elixir
+PhysicalComponent.handle_event(id, :key_down, nil)
+```
 
 ---
 
@@ -451,7 +468,7 @@ defmodule Bbparty.RenderState.TextSource do
 - No coupling between hardware and logic
 - Other transports are easy to add
 - Liveview isn't the app but a simple renderer
-- A future pocket version is easy to imagine
+- **The simulator is the system**
 
 ---
 
@@ -464,8 +481,11 @@ defmodule Bbparty.RenderState.TextSource do
 - Universal UI + thin rendering layer
 
 ---
-
-### Alternative transports : I mean it (mail demo)
+layout: media
+media: mail_demo.png
+fit: contain
+---
+### Alternative transports : I mean it 
 
 ---
 layout: end
