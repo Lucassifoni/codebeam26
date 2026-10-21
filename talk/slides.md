@@ -14,7 +14,7 @@ duration: 20min
 
 ## From Pure Code to Physical Controls
 
-Lucas Sifoni / Turing-Express / Code BEAM Europe 2026
+Lucas Sifoni / Code BEAM Europe 2026
 
 ---
 layout: media
@@ -115,6 +115,11 @@ media: [img_5404.webp, img_5411.webp]
 
 ---
 layout: media
+media: [img_5065-2.mp4]
+---
+
+---
+layout: media
 media: [img_5416-2.webp, img_5417-2.webp, img_5418.webp]
 ---
 
@@ -128,14 +133,13 @@ layout: media
 media: [img_5610.webp, img_5566.webp, img_5568.webp] 
 ---
 
----
-
-## ⚠️ flashing slide
+Flashing slide next
 
 ---
 layout: media
 media: stickers.webm
 loop: false
+autoplay: false
 ---
 
 ---
@@ -468,7 +472,7 @@ defmodule Bbparty.RenderState.TextSource do
   - very niche parts of the effects <small style="font-size: 0.5em">&larr; efficient but bruteforce-y</small>
   - generate paper task-lists for soldering <small style="font-size: 0.5em">&larr; very helpful, no regrets</small>
   - pimping the digital twin UI/UX <small style="font-size: 0.5em">&larr; same</small>
-- today : Refactor in progress of the post-human parts for the next exhibitions
+- today : Refactor in progress of the non-human parts for the next exhibitions
 
 ---
 
@@ -482,12 +486,13 @@ defmodule Bbparty.RenderState.TextSource do
 ## Benefits
 
 - Very late resolution of handlers
+- Agents can drive the system from the events without the hardware &rarr; demo
 - Live-reconfigurable installation
 - No coupling between hardware and logic
 - Other transports are easy to add
 - Liveview isn't the app but a simple renderer
 <br/><br/>
-## &rarr; **The simulator is the system**
+## There was no simulator ! &rarr; **The simulator is the system**
 
 ---
 
@@ -496,8 +501,8 @@ defmodule Bbparty.RenderState.TextSource do
 ### Why manage state in a similar way for any<sup>*</sup> app
 - Easily migrate to another framework
 - Build liveview states in scripts and tests
-- Expose pure function heads and docs via MCP, interpret lists of commands
-- Universal UI + thin rendering layer
+- Inform of pure function heads and docs via MCP, interpret lists of commands, build state
+- Universal UIs + thin rendering layer
 
 ---
 layout: media
@@ -510,7 +515,7 @@ fit: contain
 layout: end
 ---
 
-<a href="mailto:contact@turing-express.fr">contact@turing-express.fr</a>
+<a href="mailto:contact@lucassifoni.info">contact@lucassifoni.info</a>
 
 20 minutes is short : code, more photos, french version : https://pushin.eu/lsifoni/codebeam26
 
