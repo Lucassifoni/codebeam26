@@ -537,7 +537,7 @@ defmodule BbpartyWeb.ControlPanelLive do
             <p :if={@listed == []} class="text-xs">
               {if @components == [], do: "nothing placed yet", else: "no match"}
             </p>
-            <ul class="-mx-1">
+            <ul class="-mx-1 max-h-[480px] overflow-y-scroll">
               <li
                 :for={component <- @listed}
                 class={[

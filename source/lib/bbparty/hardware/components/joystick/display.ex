@@ -71,7 +71,7 @@ defmodule Hardware.Components.Joystick.Display do
               released = false;
               initialX = e.clientX;
               currentX = e.clientX;
-              if (!pulser) pulser = setInterval(pulse, 200);
+              if (!pulser) pulser = setInterval(pulse, 16);
               document.addEventListener("mouseup", cleanup);
               document.addEventListener("mousemove", move);
               if (rafId == null) rafId = requestAnimationFrame(tick);

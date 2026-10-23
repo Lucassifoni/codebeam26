@@ -16,15 +16,28 @@ duration: 20min
 
 Lucas Sifoni / Code BEAM Europe 2026
 
+<!--
+Thanks for having me for this session, from pure code to physical controls.
+I am Lucas Sifoni, an independent developer from France, and work with elixir at Alzo my product company. There's almost no Elixir in France, so I built my company to be able to work with it. Alzo is a saas company in the architecture and construction space, but I also sometimes get hardware contracts in the digital art space. Today I'll talk about that kind of work.
+-->
+
 ---
 layout: media
 media: bb_01.png
 ---
 
+<!--
+This talk is about a project the type foundry "bureau brut" asked me to build. A type foundry produces and sells fonts. Designers buy them for their projects and they usually test them before buying.
+-->
+
 ---
 layout: media
 media: bb_02.png
 ---
+
+<!--
+For their 10 year anniversary they wanted to produce a physical type tester. They could just have put a computer in the exhibition but wanted something tangible and joyful to use.
+-->
 
 ---
 layout: media
@@ -33,19 +46,31 @@ media: bb_03.png
 
 ---
 layout: media
-media: ["Wmmorris3248.jpg", "morris1.png"]
+media: [ "Wmmorris3248.jpg", "morris1.png" ]
 ---
+
+<!--
+They claim to be in the heritage of William Morris, an architect and designer from the 1800s. He has written a lot about the industrial revolution. He did not reject new technology but thought that craft needed to provide joy to the craftsmen and the users, even if new tech made it more efficient. Maybe this resonates !
+-->
 
 ---
 layout: media
 media: IMG_6232.jpeg
 ---
 
+<!--
+So in this spirit we built a type tester machine. It has a 196-key keyboard, aviation-like switches and control joysticks and various controls. People could physically switch font by picking and placing a floppy disk, type text, use little levers to size, kern and space it, choose font features, and print a souvenir sticker. It had a few controls for random text as well if you didn't have inspiration.
+-->
+
 ---
 layout: media
 media: IMG_5733.webp
 fit: contain
 ---
+
+<!--
+Here we can see a frontal view
+-->
 
 ---
 
@@ -58,6 +83,11 @@ fit: contain
 - Old school look and feel, powered by Elixir
 
 Used by ~500 people to create ~2000 printouts in 4 days
+
+<!--
+Our project then was to build the tester as a duo, with an old power plant aesthetic, build everything ourselves, and build by intuition, discovering the design along the way.
+It has been used by around 500 people who played a lot with it and printed north of 2000 stickers.
+-->
 
 ---
 
@@ -76,6 +106,11 @@ Trivia :
 - DIP ICs and passive components
 - Hand wired on padboards to accomodate the short deadline
 
+<!--
+So the final hardware has an 196 key keyboard, a trackball, joysticks, needle gauges, backlit keypads, switchboards with two led indicators per switch, a fake floppy disk reader and a bixolon xd5-43d printer, and we must interact with all that from Elixir.
+For the electronics themselves, we chose to go for fully handmade and hand wire them on padboards, with "older school" components.
+-->
+
 ---
 layout: media
 media: layout.png
@@ -87,6 +122,10 @@ layout: media
 media: img_4636.webp # 2026-06-25 14:49
 ---
 
+<!--
+So, a few pictures of the build process : each component needed to be designed in CAD, built and tested, and this takes a lot of time, so you'll understand that we can't wait for the hardware to be there before working on the software.
+-->
+
 ---
 layout: media
 media: [img_4665.webp, img_4705-2.webp]
@@ -94,13 +133,21 @@ media: [img_4665.webp, img_4705-2.webp]
 
 ---
 layout: media
-media: [img_4942.mp4, img_4949.mp4]
+media: [ img_4942.mp4, img_4949.mp4 ]
 ---
+
+<!--
+Here we can see that we've put NFC tags in all the floppy disks.
+-->
 
 ---
 layout: media
-media: [img_4951.mp4, img_4952.mp4] # 2026-07-20 14:29
+media: [ img_4951.mp4, img_4952.mp4 ] # 2026-07-20 14:29
 ---
+
+<!--
+Here we can see the software and hardware I/O starting to be in sync.
+-->
 
 ---
 layout: media
@@ -110,13 +157,21 @@ media: [img_4988.webp, img_4996.mp4]
 
 ---
 layout: media
-media: [img_5404.webp, img_5411.webp]
+media: [ img_5404.webp, img_5411.webp ]
 ---
+
+<!--
+More design and build pictures ...
+-->
 
 ---
 layout: media
-media: [img_5065-2.mp4]
+media: [ img_5065-2.mp4 ]
 ---
+
+<!--
+The first boards being cabled... as I said, this was very artisanal, but there's joy to be found in that process when you create everything from scratch.
+-->
 
 ---
 layout: media
@@ -127,6 +182,10 @@ media: [img_5416-2.webp, img_5417-2.webp, img_5418.webp]
 layout: media
 media: img_5519-2.mp4
 ---
+
+<!--
+More sync between software and hardware - events are batched in the liveview but not in the final system
+-->
 
 ---
 layout: media
@@ -333,7 +392,7 @@ layout: media
 media: control_panel.png
 fit: contain
 ---
-Panel visit
+Panel visit : instantiated components = routing from the world to logic
 ---
 layout: media
 media: schematic_first_part.png
@@ -369,25 +428,6 @@ How events enter the system
 - Output-enabled `PhysicalComponent` run `handle_transition/3` and impurely drive outputs
 - Any cast effects on the world (printing) are run
 - The actual rendering updates
-
----
-
-## Impure steps of "align left"
-
-- I press the physical key
-- ESP32 scans keys and sends `<<0x82, 6, 1>>` (key event, line 6, down)
-- Transformed to `{:frame, 0x02, <<0x82, 6, 1>>}` routes to a Module2Dispatcher
-- Module2Dispatcher calls `PhysicalComponent.handle_event(:button_6, :key_down, nil)`
-- `button_6` found in the registry, `%PushButtonWithLed{action: "align_left", module: 2, led: 2}`.
-   - `PushButtonWithLed.handle_event/3` -> `{:ok, %{state | pushed: true}, [{:key_down, %{char: "", shift: "", action: "align_left"}}]}`.
-      - broadcast `{:component_event, :button_6, :key_down, meaning}`  
-
-... pure core ...
-
-- `maybe_output/3` → `PushButtonWithLed.handle_transition/3` → `LedShadow.put(2, 2, true)`
-- `LedShadow` maintains a bit mask per board that has LEDs
-- Next 20ms tick LEDs are flushed -> `Module2.set_leds(<<0b0000_0100>>)`
-- ESP32 gets `<<0x12, 0x04>>` and lights the LED
 
 ---
 
@@ -432,6 +472,33 @@ defp do_apply(state, {_id, :select_font, font}, _layout),
 
 ---
 
+Projections issue dependent update commands 
+
+```elixir
+def projections do
+  %{
+    ...
+    text_quantity: &quantity_commands/1,
+    alignment: &alignment_lamps/1,
+    transform_toupper: &uppercase_lamp/1,
+    text_source: &source_lamps/1,
+    cumulative_features: &feature_active_commands/1,
+    selected_font: &font_commands/1
+  }
+end
+
+defp alignment_lamps(alignment) do
+  [
+    {{:action, :align_left}, {:set_lit, alignment == :left}},
+    {{:action, :align_center}, {:set_lit, alignment == :center}}
+  ]
+end
+```
+
+---
+
+Dedicated pure modules handle the detail of event application
+
 ```elixir
 defmodule Bbparty.RenderState.TextSource do
   @sources %{
@@ -442,6 +509,9 @@ defmodule Bbparty.RenderState.TextSource do
     source_numbers: :numbers
   }
 
+  def nudge_quantity(state, chars),
+    do: %{state | text_quantity: clamp(state.text_quantity + chars, 0, TextToWrite.count())}
+    
   def effective_text(%RenderState{text_source: :font_name, selected_font: font}), do: font || ""
   def effective_text(%RenderState{text_source: :alpha_upper}), do: @alpha_upper
   def effective_text(%RenderState{text_source: :alpha_lower}), do: @alpha_lower
@@ -453,10 +523,25 @@ defmodule Bbparty.RenderState.TextSource do
   def overridden?(%RenderState{text_quantity: n}), do: is_integer(n) and n > 0
   
   def clear_quantity(state), do: %{state | text_quantity: 0, text_source: :user}
-  
-  def nudge_quantity(state, chars),
-    do: %{state | text_quantity: clamp(state.text_quantity + chars, 0, TextToWrite.count())}
+
 ```
+---
+
+## Impure steps of "align left" pressed
+
+- I press the physical key
+- ESP32 scans keys and sends `<<0x82, 6, 1>>` (key event, line 6, down)
+- Transformed to `{:frame, 0x02, <<0x82, 6, 1>>}` routes to a Module2Dispatcher
+- Module2Dispatcher calls `PhysicalComponent.handle_event(:button_6, :key_down, nil)`
+- `button_6` found in the registry, `%PushButtonWithLed{action: "align_left", module: 2, led: 2}`.
+   - `PushButtonWithLed.handle_event/3` -> `{:ok, %{state | pushed: true}, [{:key_down, %{char: "", shift: "", action: "align_left"}}]}`.
+      - broadcast `{:component_event, :button_6, :key_down, meaning}`  
+
+- `maybe_output/3` → `PushButtonWithLed.handle_transition/3` → `LedShadow.put(2, 2, true)`
+- `LedShadow` maintains a bit mask per board that has LEDs
+- Next 20ms tick LEDs are flushed -> `Module2.set_leds(<<0b0000_0100>>)`
+- ESP32 gets `<<0x12, 0x04>>` and lights the LED
+
 ---
 
 ## Build process
